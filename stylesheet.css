@@ -24,6 +24,7 @@
     font-size: 3em;
     margin-bottom: 0.2em;
     font-weight: normal;
+    color: white;
   }
   
   .banner p {
@@ -97,9 +98,12 @@
   }
   
   footer {
-    text-align: center
+    text-align: center;
   }
-
+ 
+  footer div{
+    padding: 10px;
+  }
   
 @media (width < 900px){
 

@@ -82,12 +82,11 @@
     color: white;
     height: 60px;
     margin: auto;
+    font-size: 1.1em;
   }
   
   /* Responsive menu */
-  @media (max-width: 768px) {
-
-
+  @media (max-width< 900px) {
     .nav-links {
       display: none;
       flex-direction: column;

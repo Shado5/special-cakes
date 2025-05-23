@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Contact Us | Special Cakes for All Occasions</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="images/web_images/logo.png" alt="Special Cakes logo" class="logo" />
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cakes.html">Cakes for Sale</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <h1>Get in touch with us</h1>
+        <p>We'd love to hear from you!</p>
+    </section>
+
+    <main class="container" style="height: 52em;">
+        <h1>Get in touch with us!</h1>
+        <form class="order-form" action="mailto:specialcakes@tafe.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="Phone" required>
+
+            <label for="message">Your question or feedback:</label>
+            <textarea id="message" name="Message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            &copy; 2025 Teresa Fares
+        </div>
+    </footer>
+
+</body>
+
+</html>

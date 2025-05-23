@@ -89,6 +89,7 @@
   .container {
     max-width: 1000px;
     margin: 2em auto;
+    flex: 1;
   }
   
   h1 {
@@ -98,6 +99,7 @@
   
   footer {
     text-align: center;
+    bottom: 0;
   }
  
   footer div{
@@ -218,6 +220,14 @@
     background-color: #c63d32;
   }
 
+  .order-form textarea {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+
 @media (width < 900px){
 
 
@@ -235,6 +245,7 @@
 
 .container{
   padding: 0.7em;
+  flex: 1
 }
 
   .nav-links li {

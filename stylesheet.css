@@ -1,84 +1,88 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  .banner {
-    background-image: url('images/web_images/cakes1200.png'); 
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 4em 1em;
-    font-family: 'Georgia', serif;
-    box-shadow: inset 0 0 0 1000px rgba(12, 36, 60, 0.6);
-  }
-  
-  .homepageimg{
-    max-width: 100%;
-    height: auto;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .banner h1 {
-    font-size: 3em;
-    margin-bottom: 0.2em;
-    font-weight: normal;
-    color: white;
-  }
-  
-  .banner p {
-    font-size: 1.5em;
-    font-weight: 300;
-  }
+.banner {
+  background-image: url('images/web_images/cakes1200.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4em 1em;
+  font-family: 'Georgia', serif;
+  box-shadow: inset 0 0 0 1000px rgba(12, 36, 60, 0.6);
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #0C243C;
-    line-height: 1.6;
-    padding: 0;
-  }
- 
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-bottom: 2px solid #0C243C;
-    padding: 0.5em 1em;
-    position: sticky;
-    top: 0;
-  }
-  
-  .logo {
-    height: 50px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.2em;
-  }
-  
-  .nav-links a {
-    color: #0C243C;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-  
-  .nav-toggle {
-    display: none;
-  }
-  
-  .nav-toggle-label {
-    display: none;
-    font-size: 2em;
-    color: #0C243C;
-    cursor: pointer;
-  }
+.homepageimg {
+  max-width: 100%;
+  height: auto;
+}
 
- html, body {
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  font-weight: normal;
+  color: white;
+}
+
+.banner p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #0C243C;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid #0C243C;
+  padding: 0.5em 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2em;
+
+}
+
+.nav-links a {
+  color: #0C243C;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  font-size: 2em;
+  color: #0C243C;
+  cursor: pointer;
+}
+
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -104,152 +108,153 @@ footer {
   padding: 1em;
   font-size: 1.1em;
 }
-  
-  h1 {
-    color: #E94D40; 
-    margin-bottom: 0.5em;
-  }
-  
-  footer {
-    text-align: center;
-    bottom: 0;
-  }
- 
-  footer div{
-    padding: 10px;
-  }
-  
-  .cake-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-  
-  .cake-card {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1em;
-    transition: transform 0.3s;
-    outline: 1px solid white;
-    box-shadow: 7px 10px rgb(185, 185, 185);
-  }
-  
-  .cake-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .cake-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .cake-card h2 {
-    margin-top: 0.8em;
-    color: #0C243C;
-  }
 
-  .lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .lightbox-img {
-    max-width: 90%;
-    max-height: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-  }
-  
-  .lightbox .close {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-  }
-  .price-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-    font-size: 1em;
-  }
-  
-  .price-table th,
-  .price-table td {
-    border: 1px solid #ccc;
-    padding: 0.75em;
-    text-align: center;
-  }
-  
-  .price-table th {
-    background-color: #0C243C;
-    color: white;
-  }
-  
-  .order-form {
-    display: flex;
-    flex-direction: column;
-    
-    margin-top: 1em;
-  }
-  
-  .order-form label {
-    font-weight: bold;
-    margin-top: 2em;
-  }
-  
-  .order-form input {
-    padding: 0.5em;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .order-form button {
-    padding: 0.7em;
-    background-color: #E94D40;
-    color: white;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .order-form button:hover {
-    background-color: #c63d32;
-  }
+h1 {
+  color: #E94D40;
+  margin-bottom: 0.5em;
+}
 
-  .order-form textarea {
-    padding: 0.5em;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-  }
+footer {
+  text-align: center;
+  bottom: 0;
+}
 
-@media (width < 900px){
+footer div {
+  padding: 10px;
+}
+
+.cake-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.cake-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1em;
+  transition: transform 0.3s;
+  outline: 1px solid white;
+  box-shadow: 7px 10px rgb(185, 185, 185);
+}
+
+.cake-card:hover {
+  transform: scale(1.05);
+}
+
+.cake-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cake-card h2 {
+  margin-top: 0.8em;
+  color: #0C243C;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid #ccc;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.price-table th {
+  background-color: #0C243C;
+  color: white;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1em;
+}
+
+.order-form label {
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.order-form input {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-form button {
+  padding: 0.7em;
+  background-color: #E94D40;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background-color: #c63d32;
+}
+
+.order-form textarea {
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+@media (width < 900px) {
 
 
   .nav-links {
     display: none;
     flex-direction: column;
     background-color: white;
-    max-width:  100%;
+    max-width: 100%;
     position: absolute;
     top: 60px;
     right: 0;
@@ -257,20 +262,20 @@ footer {
     margin: 1em;
   }
 
-.container{
-  padding: 0.7em;
-  flex: 1
-}
+  .container {
+    padding: 0.7em;
+    flex: 1
+  }
 
   .nav-links li {
-    border-top: 1px solid #E94D40; 
+    border-top: 1px solid #E94D40;
     padding: 1em;
-    padding-top:0.2em;
+    padding-top: 0.2em;
     padding-bottom: 0.2em;
     text-align: center;
   }
 
-  .nav-toggle:checked + .nav-toggle-label + .nav-links {
+  .nav-toggle:checked+.nav-toggle-label+.nav-links {
     display: flex;
   }
 

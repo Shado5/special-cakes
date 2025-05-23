@@ -9,52 +9,52 @@
 </head>
 
 <body>
+    <div class="page-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="index.html" class="logo-link">
+                <img src="images/web_images/logo.png" alt="Special Cakes logo" class="logo" />
+            </a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cakes.html">Cakes for Sale</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="index.html" class="logo-link">
-            <img src="images/web_images/logo.png" alt="Special Cakes logo" class="logo" />
-        </a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cakes.html">Cakes for Sale</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+        <section class="banner">
+            <h1>Get in touch with us</h1>
+            <p>We'd love to hear from you!</p>
+        </section>
 
-    <section class="banner">
-        <h1>Get in touch with us</h1>
-        <p>We'd love to hear from you!</p>
-    </section>
+        <main class="container" style="width: 70%;">
+            <h1>Get in touch with us!</h1>
+            <form class="order-form" action="mailto:specialcakes@tafe.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="Name" required>
 
-    <main class="container" style="height: 52em;">
-        <h1>Get in touch with us!</h1>
-        <form class="order-form" action="mailto:specialcakes@tafe.com" method="POST" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="Name" required>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="Email" required>
 
-            <label for="email">Email address:</label>
-            <input type="email" id="email" name="Email" required>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="Phone" required>
 
-            <label for="phone">Phone number:</label>
-            <input type="tel" id="phone" name="Phone" required>
+                <label for="message">Your question or feedback:</label>
+                <textarea id="message" name="Message" rows="5" required style="margin-bottom: 2em"></textarea>
 
-            <label for="message">Your question or feedback:</label>
-            <textarea id="message" name="Message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </main>
 
-            <button type="submit">Send</button>
-        </form>
-    </main>
-
-    <footer>
-        <div>
-            &copy; 2025 Teresa Fares
-        </div>
-    </footer>
-
+        <footer>
+            <div>
+                &copy; 2025 Teresa Fares
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Special Cakes for All Occasions</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-link">
+            <img src="images/web_images/logo.png" alt="Special Cakes logo" class="logo" />
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cakes.html">Cakes for Sale</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <h1>Special Cakes for All Occasions</h1>
+        <p>Delicious cakes for every celebration</p>
+    </section>
+
+    <main class="container">
+        <h1>Cakes for Sale</h1>
+        <div class="cake-gallery">
+            <div class="cake-card">
+                <img src="smallimages/specialOccasion300.jpg" data-large="largeimages/specialOccasion900.jpg"
+                    alt="Speciality Cake" class="cake-thumb">
+                <h2>Speciality Cakes</h2>
+            </div>
+
+            <div class="cake-card">
+                <img src="smallimages/orangeCake300.jpg" data-large="largeimages/orangeCake640.jpg" alt="Flavoured Cake"
+                    class="cake-thumb">
+                <h2>Flavoured Cakes</h2>
+            </div>
+
+            <div class="cake-card">
+                <img src="smallimages/strawberryCheeseCake300.jpg" data-large="largeimages/strawberryCheeseCake640.jpg"
+                    alt="Cheesecake" class="cake-thumb">
+                <h2>Cheesecakes</h2>
+            </div>
+
+            <div class="cake-card">
+                <img src="smallimages/brownie300.jpg" data-large="largeimages/brownie640.jpg" alt="Brownie"
+                    class="cake-thumb">
+                <h2>Brownies</h2>
+            </div>
+
+            <div class="cake-card">
+                <img src="smallimages/cupcake300.jpg" data-large="largeimages/cupcake640.jpg" alt="Cupcake"
+                    class="cake-thumb">
+                <h2>Cupcakes</h2>
+            </div>
+
+            <div class="cake-card">
+                <img src="smallimages/macaron300.jpg" data-large="largeimages/macaron640.jpg" alt="Macaron"
+                    class="cake-thumb">
+                <h2>Macarons</h2>
+            </div>
+        </div>
+
+        <h2>Prices</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Cake Size</th>
+                    <th>Suitable for</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Small</td>
+                    <td>8-10 people</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>10-12 people</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>16-20 people</td>
+                    <td>$100.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>How to order</h2>
+        <p>If you’re interested in ordering a cake for your special occasion, let us know!</p>
+        <form class="order-form" action="mailto:specialcakes@tafe.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="cake-type">Type of cake required:</label>
+            <input type="text" id="cake-type" name="cake-type" required>
+
+            <label for="date">Date required:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div>&copy; 2025 Teresa Fares</div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="Enlarged Cake Image">
+    </div>
+
+    <!-- Script -->
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        const closeBtn = document.querySelector('.lightbox .close');
+        const thumbs = document.querySelectorAll('.cake-thumb');
+
+        thumbs.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.getAttribute('data-large');
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

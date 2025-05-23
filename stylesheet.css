@@ -253,8 +253,8 @@ footer {
     position: absolute;
     top: 60px;
     right: 0;
-    margin: 1em;
     border-radius: 5px;
+    margin: 1em;
   }
 
 .container{
@@ -265,6 +265,8 @@ footer {
   .nav-links li {
     border-top: 1px solid #E94D40; 
     padding: 1em;
+    padding-top:0.2em;
+    padding-bottom: 0.2em;
     text-align: center;
   }
 
